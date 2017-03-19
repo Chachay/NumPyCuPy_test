@@ -1,0 +1,3 @@
+[submodule "CuPy"]
+	path = CuPy
+	url = https://github.com/Chachay/CuPy.git
