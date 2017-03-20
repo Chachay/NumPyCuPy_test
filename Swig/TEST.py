@@ -12,3 +12,4 @@ print(mc)
 
 print("7. Swig MKL cblas_dgemm\n   ")
 mc = SwigMod.Swig_Dot_MKL(ma,mb)
+print(mc)

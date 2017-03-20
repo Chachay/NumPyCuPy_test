@@ -17,9 +17,10 @@ except AttributeError:
 _SwigMod = Extension("_SwigMod",
                    ["SwigMod.i","Main.cpp"],
                    swig_opts=['-c++', '-py3'],
-                   include_dirs = [numpy_include, "D:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2017\windows\mkl\include"],
-                   library_dirs = ['D:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2017.2.187\windows\mkl\lib\intel64'],
-                   libraries = ['mkl_core','mkl_intel_lp64','mkl_sequential'],
+                   include_dirs = [numpy_include, "D:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2017.2.187\windows\mkl\include"],
+                   library_dirs = ['D:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2017.2.187\windows\mkl\lib\intel64_win',
+                   'D:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2017.2.187\windows\compiler\lib\intel64_win'],
+                   libraries = ['mkl_core','mkl_intel_lp64','mkl_sequential','libiomp5md'],
                    )
 
 # ezrange setup
